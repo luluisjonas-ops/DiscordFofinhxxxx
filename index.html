@@ -1160,7 +1160,17 @@ background:#151a1c;
 border-color:#56646a
 }
 
-    @media(max-width:900px){
+    /* Softer surfaces keep the retro palette without the rigid box look. */
+    .server{border-radius:12px}
+    .server:hover,.server.active{border-radius:10px}
+    .channel,.member,.icon-btn{border-radius:8px}
+    .composer-box,.modal,.profile-card,.call{border-radius:12px}
+    .tile{border-radius:10px}
+    .field input,.field textarea,.field select{border-radius:8px}
+    .primary,.secondary,.file-choice button,.file-chip{border-radius:8px}
+    .toast{border-radius:8px}
+
+        @media(max-width:900px){
 .app{
 grid-template-columns:54px 200px minmax(300px,1fr)
 }
